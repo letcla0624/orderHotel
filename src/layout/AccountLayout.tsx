@@ -47,8 +47,8 @@ export default function Account() {
             <img
               src={
                 device === "PC"
-                  ? "/img/pc/avatar/asset2.png"
-                  : "/img/mobile/avatar/asset2.png"
+                  ? "img/pc/avatar/asset2.png"
+                  : "img/mobile/avatar/asset2.png"
               }
               alt=""
               className=""
