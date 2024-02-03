@@ -6,8 +6,8 @@ export default function About() {
 
   const img =
     device === "mobile"
-      ? "bg-[url('/img/mobile/index/about/about.jpg')]"
-      : "bg-[url('/img/pc/index/about/about.jpg')]";
+      ? "bg-[url('img/mobile/index/about/about.jpg')]"
+      : "bg-[url('img/pc/index/about/about.jpg')]";
 
   return (
     <div className="w-full max-h-screen sm:h-[680px] lg:h-[880px] py-20 lg:py-[120px]">
