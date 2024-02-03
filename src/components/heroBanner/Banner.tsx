@@ -79,7 +79,7 @@ export default function Banner() {
                   : (item.imageSmall as string)
               }
               alt={item.alt}
-              className="w-full h-full object-cover brightness-[0.4]"
+              className="w-full h-screen object-cover brightness-[0.4]"
             />
           </SwiperSlide>
         );
