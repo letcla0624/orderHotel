@@ -53,7 +53,7 @@ export default function SideMenu() {
         <div className="h-full px-3 py-4 overflow-y-auto bg-white shadow-lg">
           <div className="mt-10 mb-5 lg:mt-0">
             <img
-              src="/img/logo2.png"
+              src="img/logo2.png"
               alt="logo"
               className="max-w-[196px] mx-auto"
             />

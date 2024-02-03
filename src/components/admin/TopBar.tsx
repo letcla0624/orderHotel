@@ -27,7 +27,7 @@ export default function TopBar() {
         <div className="flex items-center gap-3">
           <p>aa@aa.aa</p>
           <img
-            src="/img/mobile/avatar/asset1.png"
+            src="img/mobile/avatar/asset1.png"
             alt="頭像"
             className="w-10 h-10"
           />

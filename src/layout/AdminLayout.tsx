@@ -9,7 +9,6 @@ export default function AdminLayout() {
     <>
       <div className="flex flex-col lg:flex-row bg-white h-screen">
         <SideMenu />
-
         <div className="lg:w-full bg-white">
           <div className="relative bg-black-40 min-h-screen lg:pl-64">
             <TopBar />
