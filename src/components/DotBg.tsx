@@ -6,7 +6,7 @@ export default function DotBg({ mainClass }) {
 
   return (
     <img
-      src={device === "PC" ? "/img/pc/dot.png" : "/img/mobile/dot.png"}
+      src={device === "PC" ? "img/pc/dot.png" : "img/mobile/dot.png"}
       alt="dotBg"
       className={`absolute w-28 lg:w-48 z-[1] ${mainClass}`}
     />
