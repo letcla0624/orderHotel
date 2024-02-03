@@ -21,32 +21,32 @@ export default function Banner() {
   const bannerList: SwiperList[] = [
     {
       id: 1,
-      imageBig: "/img/pc/index/banner/banner1.jpg",
-      imageSmall: "/img/mobile/index/banner/banner1.jpg",
+      imageBig: "img/pc/index/banner/banner1.jpg",
+      imageSmall: "img/mobile/index/banner/banner1.jpg",
       alt: "banner1",
     },
     {
       id: 2,
-      imageBig: "/img/pc/index/banner/banner2.jpg",
-      imageSmall: "/img/mobile/index/banner/banner2.jpg",
+      imageBig: "img/pc/index/banner/banner2.jpg",
+      imageSmall: "img/mobile/index/banner/banner2.jpg",
       alt: "banner2",
     },
     {
       id: 3,
-      imageBig: "/img/pc/index/banner/banner3.jpg",
-      imageSmall: "/img/mobile/index/banner/banner3.jpg",
+      imageBig: "img/pc/index/banner/banner3.jpg",
+      imageSmall: "img/mobile/index/banner/banner3.jpg",
       alt: "banner3",
     },
     {
       id: 4,
-      imageBig: "/img/pc/index/banner/banner4.jpg",
-      imageSmall: "/img/mobile/index/banner/banner4.jpg",
+      imageBig: "img/pc/index/banner/banner4.jpg",
+      imageSmall: "img/mobile/index/banner/banner4.jpg",
       alt: "banner4",
     },
     {
       id: 5,
-      imageBig: "/img/pc/index/banner/banner5.jpg",
-      imageSmall: "/img/mobile/index/banner/banner5.jpg",
+      imageBig: "img/pc/index/banner/banner5.jpg",
+      imageSmall: "img/mobile/index/banner/banner5.jpg",
       alt: "banner5",
     },
   ];
@@ -79,7 +79,7 @@ export default function Banner() {
                   : (item.imageSmall as string)
               }
               alt={item.alt}
-              className="w-full h-screen object-cover brightness-[0.4]"
+              className="w-full h-full object-cover brightness-[0.4]"
             />
           </SwiperSlide>
         );

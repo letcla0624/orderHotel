@@ -6,7 +6,7 @@ export default function FooterLineBg() {
 
   return (
     <img
-      src={device === "PC" ? "/img/pc/line2.png" : "/img/mobile/line.png"}
+      src={device === "PC" ? "img/pc/line2.png" : "img/mobile/line.png"}
       alt="lineBg"
       className="w-full"
     />

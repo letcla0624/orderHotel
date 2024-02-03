@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 // components
 import Breadcrumbs from "@/components/admin/Breadcrumbs";
-import OrderForm from "@/components/admin/OrderForm";
+// import OrderForm from "@/components/admin/OrderForm";
 import Loading from "@/components/Loading";
 // utils
 import { confirmAlert, sweetAlert, sweetAlertError } from "@/utils/sweetAlert";
@@ -9,7 +9,7 @@ import ZipCodeMap from "@/utils/zipcodes";
 // interface
 import { OrdersList, RoomsList, UserInfo } from "@/interface/admin";
 // ant design
-import { Modal, Space, Table, Tag } from "antd";
+import { Space, Table, Tag } from "antd";
 import type { ColumnsType } from "antd/es/table";
 // api data
 import { AxiosError } from "axios";
@@ -148,24 +148,24 @@ export default function AdminOrders() {
   }, [fetchData]);
 
   // 傳入要編輯的資料
-  const [editOrderData, setOrderData] = useState<OrdersList | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [editOrderData, setOrderData] = useState<OrdersList | null>(null);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
   // 打開 Modal
-  const openModalFn = (txt: string, editOrderData: OrdersList) => {
-    setIsModalOpen(true);
+  // const openModalFn = (txt: string, editOrderData: OrdersList) => {
+  //   setIsModalOpen(true);
 
-    if (txt === "new") {
-      setOrderData(null);
-    } else if (txt === "edit") {
-      setOrderData(editOrderData);
-    }
-  };
+  //   if (txt === "new") {
+  //     setOrderData(null);
+  //   } else if (txt === "edit") {
+  //     setOrderData(editOrderData);
+  //   }
+  // };
 
   // 關閉 Modal
-  const closeModalFn = () => {
-    setIsModalOpen(false);
-  };
+  // const closeModalFn = () => {
+  //   setIsModalOpen(false);
+  // };
 
   // 取消訂單
   const deleteOrderDataFn = async (editOrderData: OrdersList) => {
@@ -214,7 +214,7 @@ export default function AdminOrders() {
             }))}
           />
 
-          <Modal
+          {/* <Modal
             title="編輯訂單"
             centered
             open={isModalOpen}
@@ -227,7 +227,7 @@ export default function AdminOrders() {
               closeModalFn={closeModalFn}
               setFetchData={setFetchData}
             />
-          </Modal>
+          </Modal> */}
         </div>
       )}
     </>

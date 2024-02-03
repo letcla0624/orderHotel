@@ -29,14 +29,14 @@ export default function FootSwiper() {
     <div className=" bg-black-10 pl-3 pr-0 py-20 lg:px-0 lg:py-[120px]">
       <div className=" mx-auto relative">
         <img
-          src="/img/pc/dot.png"
+          src="img/pc/dot.png"
           alt="dot-bg"
           className="absolute w-48 right-20 -top-40 hidden lg:block"
         />
         <div className="flex">
           <div className="lg:w-2/12 relative hidden lg:block">
             <img
-              src="/img/pc/line.png"
+              src="img/pc/line.png"
               alt="line-bg"
               className="w-[86%] xl:w-[80%] 2xl:w-[60%] 3xl:w-[49%] h-auto absolute left-0 ml-5 3xl:ml-20 -top-16"
             />

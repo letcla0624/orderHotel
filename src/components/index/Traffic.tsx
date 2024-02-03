@@ -48,13 +48,13 @@ export default function Traffic() {
         <div className="rounded-3xl lg:rounded-lg overflow-hidden mb-10">
           {device === "PC" ? (
             <img
-              src="/img/pc/index/map.jpg"
+              src="img/pc/index/map.jpg"
               alt="地圖"
               className="w-full h-full object-cover"
             />
           ) : (
             <img
-              src="/img/mobile/index/map.jpg"
+              src="img/mobile/index/map.jpg"
               alt="地圖"
               className="w-full h-full object-cover"
             />
