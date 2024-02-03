@@ -38,7 +38,7 @@ export default function RoomSwiper() {
     <div className="w-full relative">
       <div className="max-w-screen-2xl 3xl:mx-auto mt-10 pb-20 lg:py-[120px]">
         <img
-          src="/img/mobile/line.png"
+          src="img/mobile/line.png"
           alt="lineBg"
           className="mb-10 sm:mb-20 w-9/12 h-24 ml-auto lg:hidden"
         />
@@ -92,7 +92,7 @@ export default function RoomSwiper() {
                   </div>
                   <div className="lg:w-1/2">
                     <img
-                      src="/img/mobile/bg.png"
+                      src="img/mobile/bg.png"
                       alt="bg-line"
                       className="w-full mt-5 absolute lg:hidden z-0"
                     />
@@ -128,12 +128,12 @@ export default function RoomSwiper() {
           })}
         </Swiper>
         <img
-          src="/img/pc/line3.png"
+          src="img/pc/line3.png"
           alt="lineBg"
           className="w-2/3 h-40 ml-auto absolute top-40 right-0 hidden lg:block"
         />
         <img
-          src="/img/pc/bg.png"
+          src="img/pc/bg.png"
           alt="lineBg"
           className="w-full h-auto  absolute top-80 left-0 hidden lg:block"
         />
