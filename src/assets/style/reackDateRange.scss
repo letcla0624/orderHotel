@@ -1,0 +1,13 @@
+@import "_breakPoint";
+
+.react-datepicker {
+  display: flex;
+  border-radius: 1.25rem;
+
+  @include md {
+    flex-direction: column;
+    .react-datepicker__week {
+      justify-content: center;
+    }
+  }
+}

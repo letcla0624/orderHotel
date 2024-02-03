@@ -1,0 +1,37 @@
+@import "./_breakPoint";
+
+// 修改首頁房型的 navigation
+.roomSwiper {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 96%);
+    left: auto;
+    right: 0%;
+    padding: 22px;
+
+    @include xxxl {
+      margin-right: 40px;
+    }
+    @include xxl {
+      margin-right: 80px;
+    }
+    @include lg {
+      margin-right: 20px;
+    }
+
+    &:after {
+      content: "\e5c8";
+      font-family: "Material Icons";
+      font-size: 24px;
+      color: var(--primary-100);
+    }
+  }
+
+  .swiper-button-prev {
+    right: 60px;
+
+    &:after {
+      content: "\e5c4";
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "_color";
+
+// 修改客房旅宿房型的 navigation
+.allRoomsSwiper {
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 0 3rem;
+
+    &:after {
+      content: "\e5e1";
+      font-family: "Material Icons";
+      font-size: 24px;
+      color: var(--black-80);
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+  }
+
+  .swiper-button-prev {
+    &:after {
+      content: "\e2ea";
+    }
+  }
+}
+
+// 修改訂單的 navigation
+.allOrdersSwiper {
+  .swiper-button-prev,
+  .swiper-button-next {
+    &:after {
+      content: "\e5c8";
+      font-family: "Material Icons";
+      font-size: 32px;
+      color: var(--primary-100);
+      padding: 1rem;
+      border-radius: 50%;
+    }
+
+    &:hover:after {
+      color: var(--primary-120);
+    }
+  }
+
+  .swiper-button-prev {
+    right: 60px;
+
+    &:after {
+      content: "\e5c4";
+    }
+  }
+
+  .swiper-pagination-fraction {
+    color: var(--primary-80);
+  }
+}

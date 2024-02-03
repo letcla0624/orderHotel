@@ -1,0 +1,41 @@
+export default function Input({
+  register,
+  errors,
+  type,
+  id,
+  labelText,
+  labelColor,
+  placeholder,
+  defaultValue,
+  autoFocus,
+  rules,
+}) {
+  return (
+    <div className="mb-5">
+      <label
+        htmlFor={id}
+        className={`block text-sm lg:text-base mb-2 ${
+          errors[id] ? "text-red-500" : `${labelColor}`
+        }`}
+      >
+        {labelText}
+      </label>
+      <input
+        type={type}
+        id={id}
+        className={`w-full rounded-lg px-3 py-4 border ${
+          errors[id]
+            ? "error-form"
+            : "placeholder-black-100/20 border-black-40 focus:border-primary-100 focus:ring focus:ring-primary-100 focus:outline-none"
+        }`}
+        placeholder={placeholder}
+        defaultValue={defaultValue}
+        autoFocus={autoFocus}
+        {...register(id, rules)}
+      />
+      {errors[id] && (
+        <p className="mt-2 text-sm text-red-500">{errors[id]?.message}</p>
+      )}
+    </div>
+  );
+}

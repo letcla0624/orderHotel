@@ -1,0 +1,15 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 52px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block !important;
+}

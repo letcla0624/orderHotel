@@ -1,0 +1,13 @@
+// 大按鈕 hover 的線段
+.main-btn {
+  .main-btn-line {
+    transition: width 0.3s;
+  }
+
+  &:hover {
+    .main-btn-line {
+      width: 20%;
+      background-color: white;
+    }
+  }
+}
